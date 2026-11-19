@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#241018">
+  <meta name="description" content="A one-year anniversary surprise for Ponnu">
+  <title>For My Favourite Person</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div id="petals" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Turn music on">
+    <span class="music-icon">♪</span><span class="music-label">Music</span>
+  </button>
+  <div class="music-panel" id="musicPanel" aria-label="Music controls">
+    <button id="muteMusic" type="button" aria-label="Mute music">Mute</button>
+    <label for="musicVolume">Volume</label>
+    <input id="musicVolume" type="range" min="0" max="100" value="35">
+  </div>
+
+  <section class="intro active" id="intro" aria-label="Surprise introduction">
+    <div class="intro-sky"></div>
+    <div class="intro-glow"></div>
+    <div class="infinity intro-infinity" aria-hidden="true">∞</div>
+    <div class="intro-content">
+      <p class="eyebrow">28 · 11 · 2025</p>
+      <h1>A little surprise for the person who became my favourite part of life...</h1>
+      <p class="intro-line">One unexpected <em>“Hi”</em>... and an entire year of beautiful memories.</p>
+      <button class="gold-button" id="openSurprise" type="button">
+        Open Your Surprise <span>❤️</span>
+      </button>
+    </div>
+  </section>
+
+  <main id="story" hidden>
+    <section class="section story-start" data-title="The Beginning">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">November 28, 2025</p>
+        <h2 class="reveal">It All Started With a <em>Hi</em>...</h2>
+        <div class="chat-scene reveal">
+          <div class="date-chip">November 28, 2025</div>
+          <div class="message-row">
+            <div class="avatar">V</div>
+            <div class="message">Hi <span>❤️</span></div>
+          </div>
+          <p class="typing" id="typingText"></p>
+        </div>
+        <div class="story-line reveal" aria-label="Relationship timeline">
+          <span>Friendship</span><i></i><span>Conversations</span><i></i><span>Caring</span><i></i>
+          <span>Attachment</span><i></i><span>Love</span><i></i><span>Dreams</span><i></i><span>Forever</span>
+        </div>
+        <blockquote class="reveal script">What started as an unexpected friendship slowly became my favourite love story.</blockquote>
+      </div>
+    </section>
+
+    <section class="section friendship" data-title="Becoming Love">
+      <div class="section-inner two-column">
+        <div class="friendship-copy reveal">
+          <p class="eyebrow">Somewhere between our conversations</p>
+          <h2>The Friendship That Became <em>Love</em></h2>
+          <p>We never planned this story. We never knew that two strangers could slowly become so important to each other. Somewhere between our conversations, our laughter, our little moments, and the care we gave each other, friendship became something more beautiful. Without knowing exactly when, I started finding happiness in you.</p>
+        </div>
+        <div class="heart-orbit reveal" aria-label="Unexpected, beautiful, unplanned, ours">
+          <div class="orbit-heart heart-a">V</div>
+          <div class="orbit-line"></div>
+          <div class="orbit-heart heart-b">A</div>
+          <div class="orbit-infinity">∞</div>
+          <div class="word-cloud"><span>Unexpected</span><span>Beautiful</span><span>Unplanned</span><span>Ours</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" data-title="Our Year">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">A chapter at a time</p>
+        <h2 class="reveal">One Year of <em>Us</em></h2>
+        <div class="timeline" id="timeline">
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open November 28, 2025"></button>
+            <div class="timeline-card"><time>November 28, 2025</time><h3>The Beginning</h3><p>One simple “Hi” became the beginning of our story.</p></div>
+          </article>
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open December 2025"></button>
+            <div class="timeline-card"><time>December 2025</time><h3>Getting Closer</h3><p>Our conversations became a part of my everyday happiness.</p></div>
+          </article>
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open January 2026"></button>
+            <div class="timeline-card"><time>January 2026</time><h3>Growing Feelings</h3><p>Slowly, you became someone I never wanted to lose.</p></div>
+          </article>
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open February 2026"></button>
+            <div class="timeline-card"><time>February 2026</time><h3>A Beautiful Bond</h3><p>Our relationship became more special, and our dreams started growing.</p></div>
+          </article>
+          <article class="timeline-item reveal highlight" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open March 15, 2026"></button>
+            <div class="timeline-card"><time>March 15, 2026</time><h3>Our Urappikkal</h3><p>A day that made our relationship feel more real, meaningful, and connected to our future.</p></div>
+          </article>
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open April to August 2026"></button>
+            <div class="timeline-card"><time>April – August 2026</time><h3>Growing Together</h3><p>Distance, patience, love, conversations, care, and the dreams we shared.</p></div>
+          </article>
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open September to October 2026"></button>
+            <div class="timeline-card"><time>September – October 2026</time><h3>One More Step Closer</h3><p>A year full of emotions, happiness, waiting, and hope.</p></div>
+          </article>
+          <article class="timeline-item reveal" tabindex="0">
+            <button type="button" class="timeline-marker" aria-label="Open November 28, 2026"></button>
+            <div class="timeline-card"><time>November 28, 2026</time><h3>One Year of Us</h3><p>One year since that little “Hi.” One year of happiness I never expected.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section urappikkal" data-title="Our Promise">
+      <div class="roses"></div>
+      <div class="section-inner two-column">
+        <div class="photo-frame reveal" id="ceremonyFrame" role="button" tabindex="0" aria-label="Add a Urappikkal photo">
+          <div class="frame-inner">
+            <img src="assets/urappikkal.jpg" alt="Anjana and Vinu on their Urappikkal day">
+            <div class="frame-caption"><span>Our Urappikkal</span><small>March 15, 2026</small></div>
+          </div>
+        </div>
+        <div class="ceremony-copy reveal">
+          <p class="eyebrow">March 15, 2026 ❤️</p>
+          <h2>A Promise That Made Our Dreams Feel <em>Real</em>...</h2>
+          <p>That day was more than a ceremony. It was a beautiful moment that made me feel closer to the future we always dream about. A day that made our relationship feel more real and our dreams more beautiful.</p>
+          <div class="promise"><span>You &amp; Me</span><b>♡</b><span>A Promise</span><b>♡</b><span>Our Future</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section distance" data-title="Miles Apart">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">Even across every mile</p>
+        <h2 class="reveal">Miles Apart, But Never Apart in <em>Heart</em>.</h2>
+        <p class="distance-copy reveal">There are so many miles between us. So many days of waiting for a moment that we haven't experienced yet. We haven't had our first meeting, but you have already become a beautiful part of my life. Distance may keep us away from each other physically, but it could never take away what I feel for you.</p>
+        <div class="distance-map reveal">
+          <div class="location left"><span contenteditable="true" aria-label="Editable location">My place</span><i></i></div>
+          <div class="connection"><div class="travelling-heart">♥</div></div>
+          <div class="location right"><i></i><span contenteditable="true" aria-label="Editable location">Your place</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section waiting-world" data-title="Waiting for You">
+      <div class="night-sky" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">A little world across the miles</p>
+        <h2 class="reveal">A Little World Where I'm Waiting for <em>You...</em></h2>
+        <div class="waiting-scene reveal">
+          <div class="scene-moon" id="magicMoon" role="button" tabindex="0" aria-label="A little message from the moon">☾</div>
+          <div class="window-glow"></div>
+          <div class="waiting-girl character"><div class="character-head"><i></i></div><div class="character-body"></div><span class="character-heart">♡</span><small>Here, looking at our moon</small></div>
+          <div class="waiting-boy character"><div class="character-head"><i></i></div><div class="character-body"></div><span class="character-heart">♥</span><small>Somewhere far away</small></div>
+          <div class="sky-connection"><span>∞</span></div>
+          <div class="scene-cloud cloud-one"></div><div class="scene-cloud cloud-two"></div>
+        </div>
+        <p class="waiting-quote reveal">“Somewhere in this world, you are looking at the same sky as me. I may not be beside you today, but a little part of my heart is always waiting for the day I finally see you.”</p>
+        <div class="magic-touches reveal" aria-label="Little hidden surprises">
+          <button type="button" data-magic="A little heart from me is travelling all the way to you.">♡</button>
+          <button type="button" data-magic="Even from far away, we can look up at the same moon and dream of the day we meet.">☾</button>
+          <button type="button" data-magic="A rose for the friendship that became my favourite love story.">🌹</button>
+          <button type="button" data-magic="One unexpected beginning, one shared dream, and an infinity of hope.">∞</button>
+          <button type="button" data-magic="A little star is keeping a place for all the beautiful tomorrows we dream about.">✧</button>
+          <button type="button" data-magic="November 28, 2025 — one little “Hi” became the beginning of us.">Nov 28</button>
+          <button type="button" id="marchTouch">March 15</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section meeting-countdown" data-title="First Meeting">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">Whenever our day arrives</p>
+        <h2 class="reveal">Counting Down to the Moment I Finally <em>See You...</em></h2>
+        <div class="countdown-heart reveal">♡</div>
+        <div class="countdown-grid" id="countdownGrid" hidden>
+          <div><strong id="countDays">--</strong><span>Days</span></div>
+          <div><strong id="countHours">--</strong><span>Hours</span></div>
+          <div><strong id="countMinutes">--</strong><span>Minutes</span></div>
+          <div><strong id="countSeconds">--</strong><span>Seconds</span></div>
+        </div>
+        <p class="countdown-undecided" id="countdownUndecided">The date is not decided yet... but my heart is already waiting.</p>
+        <label class="date-picker-label" for="meetingDate">If you have a date in mind, add it here</label>
+        <input class="meeting-date-input" id="meetingDate" type="datetime-local">
+        <p class="waiting-quote reveal">“I don't know which day it will be. I don't know how long I still have to wait. But I know that the day I finally see you will become one of the most beautiful days of my life.”</p>
+      </div>
+    </section>
+
+    <section class="section love-world-section" data-title="Our Little Love World">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">A tiny animated story, made for us</p>
+        <h2 class="reveal">Our Little Love <em>World</em></h2>
+        <div class="world-customize reveal">
+          <label>Her look <input type="color" id="girlColor" value="#c96e77" aria-label="Choose her outfit color"></label>
+          <label>His look <input type="color" id="boyColor" value="#597c91" aria-label="Choose his outfit color"></label>
+          <button type="button" id="waveCharacters">Send a little wave</button>
+        </div>
+        <div class="cartoon-stage reveal" id="cartoonStage">
+          <div class="stage-sun"></div><div class="stage-moon">☾</div>
+          <div class="stage-stars">✦　·　✧　　·　✦　·　✧</div>
+          <div class="stage-character girl-avatar"><div class="avatar-hair"></div><div class="avatar-face">☺</div><div class="avatar-dress"></div></div>
+          <div class="stage-character boy-avatar"><div class="avatar-hair"></div><div class="avatar-face">☺</div><div class="avatar-dress"></div></div>
+          <div class="stage-heart">♡</div><div class="stage-ground"></div>
+        </div>
+        <div class="stage-copy" aria-live="polite">
+          <span id="stageNumber">Stage 1 of 8</span>
+          <h3 id="stageTitle">The First Hi 💬</h3>
+          <p id="stageDescription">Two strangers meet through one little message.</p>
+        </div>
+        <div class="stage-controls">
+          <button id="previousStage" type="button">Previous</button>
+          <div class="stage-dots" id="stageDots" aria-label="Choose story stage"></div>
+          <button id="nextStage" type="button">Next</button>
+        </div>
+        <p class="fiction-note">A dreamy cartoon illustration of our story and the future we hope for.</p>
+      </div>
+    </section>
+
+    <section class="section letter-section" data-title="My Letter">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">A few words from my heart</p>
+        <h2 class="reveal">To My Favourite <em>Person</em>...</h2>
+        <button class="seal-button reveal" id="openLetter" type="button" aria-label="Read letter">
+          <span>Read My Letter</span><b>♥</b>
+        </button>
+        <article class="letter" id="letter" aria-hidden="true">
+          <div class="letter-rose">❀</div>
+          <p class="letter-signoff">Ponnu... ❤️</p>
+          <div id="letterText"></div>
+          <p class="letter-signature">With all my love,<br><em>Anjana</em></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section memories" data-title="Memories">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">Little pieces of our story</p>
+        <h2 class="reveal">Our <em>Memories</em></h2>
+        <div class="gallery-filter reveal" role="tablist">
+          <button class="active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="beginning">Our Beginning</button>
+          <button type="button" data-filter="moments">Favourite Moments</button>
+          <button type="button" data-filter="special">Our Special Day</button>
+          <button type="button" data-filter="dreams">Our Dreams</button>
+        </div>
+        <div class="gallery reveal">
+          <button class="memory-card" type="button" data-category="beginning" data-caption="Our beginning — where our story started" data-image="assets/memory-1.jpg"><div class="memory-photo"><img src="assets/memory-1.jpg" alt="Our beginning" loading="lazy"><span>Our Beginning</span></div></button>
+          <button class="memory-card" type="button" data-category="moments" data-caption="A beautiful moment with our favourite people" data-image="assets/memory-2.jpg"><div class="memory-photo"><img src="assets/memory-2.jpg" alt="A favourite memory" loading="lazy"><span>Favourite Moment</span></div></button>
+          <button class="memory-card" type="button" data-category="moments" data-caption="One of our happiest memories together" data-image="assets/memory-3.jpg"><div class="memory-photo"><img src="assets/memory-3.jpg" alt="A happy memory" loading="lazy"><span>Our Happy Moments</span></div></button>
+          <button class="memory-card" type="button" data-category="special" data-caption="Our special ceremony memories" data-image="assets/memory-4.jpg"><div class="memory-photo"><img src="assets/memory-4.jpg" alt="Urappikkal ceremony memory" loading="lazy"><span>Our Special Day</span></div></button>
+          <button class="memory-card" type="button" data-category="moments" data-caption="Celebrating the people and the promise we share" data-image="assets/memory-5.jpg"><div class="memory-photo"><img src="assets/memory-5.jpg" alt="Celebration memory" loading="lazy"><span>Celebrating Us</span></div></button>
+          <button class="memory-card" type="button" data-category="dreams" data-caption="Every little promise for the future" data-image="assets/memory-6.jpg"><div class="memory-photo"><img src="assets/memory-6.jpg" alt="A promise for our future" loading="lazy"><span>Our Promise</span></div></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section happiness" data-title="365 Days">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">Every day, a different feeling</p>
+        <h2 class="reveal">365 Days of Us... <em>A Million Feelings.</em></h2>
+        <div class="counters reveal">
+          <div><strong>1</strong><span>Beautiful Year</span></div>
+          <div><strong>∞</strong><span>Conversations</span></div>
+          <div><strong>Million</strong><span>Feelings</span></div>
+          <div><strong>2</strong><span>Hearts</span></div>
+          <div><strong>1</strong><span>Shared Dream</span></div>
+        </div>
+        <button class="secret-heart reveal" id="secretHeart" type="button" aria-label="Open secret message">♥</button>
+        <p class="secret-caption">A little secret is hiding here</p>
+      </div>
+    </section>
+
+    <section class="section future" data-title="Our Future">
+      <div class="future-sky"></div>
+      <div class="road"></div>
+      <div class="silhouettes" aria-hidden="true"><span></span><i></i><span></span></div>
+      <div class="section-inner centered future-copy">
+        <p class="eyebrow reveal">What comes next</p>
+        <h2 class="reveal">Our Story Is Only <em>Beginning</em>...</h2>
+        <p class="reveal">One year has passed, but I don't want our story to end here. I want countless more years, more memories, more laughter, more little moments, our first meeting, our dreams coming true, and a lifetime of choosing each other.</p>
+        <button class="gold-button reveal" id="futureButton" type="button">Our Forever Starts Here <span>♾️</span></button>
+      </div>
+    </section>
+
+    <section class="section final-section" data-title="Our Forever">
+      <div class="final-glow"></div>
+      <div class="section-inner centered final-copy">
+        <p class="eyebrow reveal">November 28, 2025 — November 28, 2026</p>
+        <h2 class="reveal">Happy 1st Anniversary, <em>Ponnu</em> ❤️</h2>
+        <p class="reveal">From one unexpected “Hi” to one beautiful year of us...</p>
+        <p class="reveal final-thought">You are my favourite beginning, my happiest chapter, and the person I wish to see in every tomorrow.</p>
+        <div class="years reveal">
+          <div><span>2025</span><small>The Beginning</small></div><b>♡</b>
+          <div><span>2026</span><small>Our First Year</small></div><b>♾</b>
+          <div><span>2027 &amp; Beyond</span><small>Our Dreams, Our Future, Our Forever</small></div>
+        </div>
+        <p class="script final-script reveal">“I didn't know I was waiting for you... until you became the one I never wanted to stop loving.”</p>
+        <button class="gold-button reveal future-reveal-button" id="revealMeeting" type="button">One Last Dream <span>♡</span></button>
+      </div>
+    </section>
+
+    <section class="section secret-vault" data-title="A Secret Surprise">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">A little surprise, just for you</p>
+        <h2 class="reveal">There Is Something Only You Can <em>Open...</em></h2>
+        <div class="lock-heart" aria-hidden="true"><span>♥</span><i>⌑</i><b>✧</b></div>
+        <p class="secret-intro">“Some surprises are meant for only one person. If you know the secret, you can unlock my heart's little surprise.”</p>
+        <form class="password-form" id="passwordForm">
+          <label class="sr-only" for="secretPassword">Secret password</label>
+          <input id="secretPassword" type="password" placeholder="Enter your secret" autocomplete="off" required>
+          <button class="gold-button" type="submit">Unlock My Heart <span>🔑</span></button>
+        </form>
+        <p class="password-feedback" id="passwordFeedback" aria-live="polite"></p>
+        <article class="unlocked-secret" id="unlockedSecret" hidden>
+          <p class="eyebrow">Only for you</p>
+          <h3>You found the little secret I created only for you...</h3>
+          <div class="secret-couple" aria-hidden="true"><span>♡</span><i>☺</i><b>☺</b></div>
+          <div class="secret-meeting-illustration" aria-hidden="true"><span>☺</span><i>♡</i><b>☺</b></div>
+          <small class="fiction-note">A dreamy future illustration — not a real memory.</small>
+          <p>My dearest Ponnu, there is a little future I keep close to my heart: the day the miles disappear, I see you in front of me, and all this waiting turns into the warmest hug.</p>
+          <p>You are my favourite unexpected beginning. Thank you for making this year so beautiful. I am waiting for you, and for all the lovely tomorrows we will dream into being.</p>
+          <p class="script">Until then, keep my heart safe. It belongs to you. ❤️</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section message-generator" data-title="A Message From My Heart">
+      <div class="section-inner centered">
+        <p class="eyebrow reveal">Choose a little note for today</p>
+        <h2 class="reveal">A Message From My Heart <em>to You</em></h2>
+        <div class="message-prompts reveal">
+          <button type="button" data-prompt="love">Tell me why you love me</button>
+          <button type="button" data-prompt="special">What makes our story special?</button>
+          <button type="button" data-prompt="meeting">A message for the day we finally meet</button>
+          <button type="button" data-prompt="future">What is waiting for us in our future?</button>
+          <button type="button" data-prompt="miss">Give me a message when I miss you</button>
+          <button type="button" data-prompt="sleep">Tell me something sweet before I sleep</button>
+          <button type="button" data-prompt="surprise">Open a surprise message from Anjana</button>
+        </div>
+        <article class="generated-message" id="generatedMessage" aria-live="polite">
+          <span>♡</span><p>Pick a little heart button, and a message from me will find its way to you.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section future-meeting" id="futureMeeting" data-title="A Dream of Meeting" hidden>
+      <div class="meeting-sunrise"></div><div class="meeting-stars">✦　·　✧　　✦　·　✧　·</div>
+      <div class="section-inner centered meeting-copy">
+        <p class="eyebrow">A dreamy future illustration — not a real memory</p>
+        <h2>One day, this will no longer be a <em>dream...</em></h2>
+        <div class="reunion-scene" id="reunionScene">
+          <div class="reunion-person reunion-girl"><i>☺</i><b></b></div>
+          <div class="reunion-person reunion-boy"><i>☺</i><b></b></div>
+          <span class="reunion-heart">♡</span>
+          <div class="reunion-ground"></div>
+        </div>
+        <p class="reunion-message" id="reunionMessage">No more distance. No more waiting. Just you and me.</p>
+        <button class="gold-button" id="startReunion" type="button">Imagine Our First Meeting <span>♡</span></button>
+        <p class="reunion-ending" id="reunionEnding" hidden>“Until that day, let's keep writing our story.”</p>
+        <button class="gold-button final-message-button" id="showLastMessage" type="button" hidden>One Last Little Message <span>♡</span></button>
+      </div>
+    </section>
+
+    <section class="section last-message-section" id="lastMessage" data-title="One Last Message" hidden>
+      <div class="last-stars" aria-hidden="true">·　✦　　✧　　　·　✦　·　　　✧</div>
+      <div class="section-inner centered last-message-copy">
+        <div class="last-heart">♡</div>
+        <p id="lastTypedMessage"></p>
+        <button class="gold-button" id="keepHeart" type="button">Keep This Heart Forever <span>❤️</span></button>
+      </div>
+    </section>
+
+    <aside class="love-ai" id="loveAi">
+      <button class="ai-launch" id="aiLaunch" type="button" aria-expanded="false">Ask Our Love Story AI <span>♥</span></button>
+      <div class="chat-window" id="chatWindow" aria-hidden="true">
+        <header><div><small>Made for our story</small><strong>Our Love Story AI</strong></div><button id="closeChat" type="button" aria-label="Close">×</button></header>
+        <div class="chat-messages" id="chatMessages">
+          <div class="ai-message">Ask me about our beginning, Urappikkal, our distance, or one day in our future.</div>
+        </div>
+        <form id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Write a question..." aria-label="Your question"><button type="submit" aria-label="Send">♥</button></form>
+      </div>
+    </aside>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="modal-close" type="button" aria-label="Close">×</button>
+    <div class="modal-content"></div>
+  </div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
